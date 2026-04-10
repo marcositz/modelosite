@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página</title>
+    <link type="image/png" href="img/icone.png" rel="shortcut icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- MENU -->
+    <nav>
+        <div class="logo">MeuSite</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+    
+    <!-- HOME --> 
+    <section id="home" class="inicio">
+     <div class="slides">
+        <div class="carrossel">
+            <img src="img/16x9_banner_1.jpg" class="ativa">
+                <img src="img/16x9_banner_2.jpg">
+                <img src="img/16x9_banner_3.jpg">
+        </div>
+        <!--BOTÕES DE NAVEGAÇÃO-->
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+            <!--INDICADORES DE NAVEGAÇÃO-->
+        <div class="indicadores">
+                <span class="dot ativo"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+        <div class="conteudo">
+            <h1>Marcos Oliveira</h1>
+            <p>Aluno de Técnico em Informática</p>
+        </div>
+    </section>
+    
+    <!-- SOBRE -->
+    <section id="sobre" class="sobre">
+        <h2>Sobre mim</h2>
+        <div class="sobre-container">
+            <div class="sobre-content">
+                <img src="img/professorraimundo.jpg" alt="Minha Foto">
+                <p>Olá! Estou aprendendo programação e adoro tecnologia.</p>
+            </div>
+            <div class="sobre-video">
+                <iframe 
+                    src="https://www.youtube.com/embed/G67K02pv05Q?si=61Q2Ee65JcxQ-3k-" title="Vídeo de Apresentação" frameborder="0" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section id="habilidades" class="habilidades">
+        <h2>Habilidades</h2>
+        <div class="habilidades-container">
+            <div class="habilidade">
+                <p>HTML</p>
+                <div class="barra">
+                    <div class="progresso html"></div>
+                </div>
+            </div>
+
+            <div class="habilidade">
+                <p>CSS</p>
+                <div class="barra">
+                    <div class="progresso css"></div>
+                </div>
+            </div>
+
+            <div class="habilidade">
+                <p>PHP</p>
+                <div class="barra">
+                    <div class="progresso php"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MEUSPROJETOS -->
+     <section id="projetos" class="projetos">
+        <h2>Meus Projetos</h2>
+        <div class="grid-projetos">
+            <div class="card">
+                <h3>Sistema de Vendas</h3>
+                <p>Projeto desenvolvido com PHP e MySQL</p>
+                <a href="#">Ver Projeto</a>
+            </div>
+            <div class="card">
+                <h3>Site Pessoal</h3>
+                <p>Meu primeiro site usando HTML e CSS.</p>
+                <a href="#">Ver Projeto</a>
+            </div>
+            <div class="card">
+                <h3>Calculadora</h3>
+                <p>Aplicação simples usando lógica de programação.</p>
+                <a href="#">Ver Projeto</a>
+            </div>
+        </div>
+     </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="contato">
+        <h2>Contato</h2>
+        <form class="form-contato">
+            <input type="text" placeholder="Seu Nome" required>
+            <input type="email" placeholder="Seu Email" required>
+            <input type="text" placeholder="Telefone / WhatsApp" required>
+            <textarea placeholder="Sua Mensagem" required></textarea>
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>2026 - Meu Portfólio</p>
+    </footer>
+</body>
+</html>
+<script>
+    const slides = document.querySelectorAll('.slides img');
+    const dots = document.querySelectorAll('.dot');
+    const prev = document.querySelector('.prev');
+    const next = document.querySelector('.next');
+    
+    let index = 0;
+    let intervalo;
+
+    function mostrarSlide(i) {
+        slides.forEach(slide => slide.classList.remove('ativa'));
+        dots.forEach(dot => dot.classList.remove('ativo'));
+        slides[i].classList.add('ativa');
+        dots[i].classList.add('ativo');
+    }
+
+    function proximoSlide() {
+        index = (index + 1) % slides.length;
+        mostrarSlide(index);
+    }
+
+    function slideAnterior() {
+        index = (index - 1 + slides.length) % slides.length;
+        mostrarSlide(index);
+    }
+
+    next.addEventListener('click', proximoSlide);
+    prev.addEventListener('click', slideAnterior);
+
+    dots.forEach((dot, i) => {
+        dot.addEventListener('click', () => {
+            index = i;
+            mostrarSlide(index);
+        });
+    });
+
+    function iniciarAuto() {
+        intervalo = setInterval(proximoSlide, 4000);
+    }
+
+    function pararAuto() {
+        clearInterval(intervalo);
+    }
+
+    document.querySelector('.carrossel').addEventListener('mouseenter', pararAuto);
+    document.querySelector('.carrossel').addEventListener('mouseleave', iniciarAuto);
+
+    iniciarAuto();
+</script>
+
+<script>
+    const barras = document.querySelectorAll('.progresso');
+    const secaoHabilidades = document.querySelector('#habilidades');
+
+    function animarBarras() {
+        barras.forEach(barra => {
+            const valor = barra.classList.contains('html') ? '90%' :
+                          barra.classList.contains('css') ? '80%' :
+                          barra.classList.contains('php') ? '70%' : '0%';
+            barra.style.width = valor;
+        });
+    }
+
+    const observadorHabilidades = new IntersectionObserver((entradas) => {
+        entradas.forEach(entrada => {
+            if (entrada.isIntersecting) {
+                animarBarras();
+                observadorHabilidades.unobserve(secaoHabilidades);
+            }
+        });
+    }, { threshold: 0.4 });
+
+    observadorHabilidades.observe(secaoHabilidades);
+        
+</script>
