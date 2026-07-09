@@ -1,24 +1,24 @@
-# <img src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons/palette.svg" width="18" height="18" valign="middle"/> Modelo de Site — Portfólio Pessoal
+# <img src="https://api.iconify.design/tabler/palette.svg?color=%238b949e" width="18" height="18" valign="middle" alt=""/> Modelo de Site — Portfólio Pessoal
 
 Template de **página de portfólio pessoal** em HTML5 e CSS3, com seções de apresentação, habilidades, projetos e contato. Simples, responsivo e fácil de personalizar.
 
-## <img src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons/link.svg" width="18" height="18" valign="middle"/> Demo ao vivo
+## <img src="https://api.iconify.design/tabler/link.svg?color=%238b949e" width="18" height="18" valign="middle" alt=""/> Demo ao vivo
 
-<img src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons/pointer.svg" width="18" height="18" valign="middle"/> **[marcositz.github.io/modelosite](https://marcositz.github.io/modelosite/)**
+<img src="https://api.iconify.design/tabler/pointer.svg?color=%238b949e" width="18" height="18" valign="middle" alt=""/> **[marcositz.github.io/modelosite](https://marcositz.github.io/modelosite/)**
 
-## <img src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons/sparkles.svg" width="18" height="18" valign="middle"/> Seções
+## <img src="https://api.iconify.design/tabler/sparkles.svg?color=%238b949e" width="18" height="18" valign="middle" alt=""/> Seções
 
-- <img src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons/hand-stop.svg" width="18" height="18" valign="middle"/> **Sobre mim** — apresentação pessoal
-- <img src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons/briefcase.svg" width="18" height="18" valign="middle"/> **Habilidades** — tecnologias e competências
-- <img src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons/map-pin.svg" width="18" height="18" valign="middle"/> **Meus Projetos** — vitrine de trabalhos
-- <img src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons/mail.svg" width="18" height="18" valign="middle"/> **Contato**
+- <img src="https://api.iconify.design/tabler/hand-stop.svg?color=%238b949e" width="18" height="18" valign="middle" alt=""/> **Sobre mim** — apresentação pessoal
+- <img src="https://api.iconify.design/tabler/briefcase.svg?color=%238b949e" width="18" height="18" valign="middle" alt=""/> **Habilidades** — tecnologias e competências
+- <img src="https://api.iconify.design/tabler/map-pin.svg?color=%238b949e" width="18" height="18" valign="middle" alt=""/> **Meus Projetos** — vitrine de trabalhos
+- <img src="https://api.iconify.design/tabler/mail.svg?color=%238b949e" width="18" height="18" valign="middle" alt=""/> **Contato**
 
-## <img src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons/tools.svg" width="18" height="18" valign="middle"/> Tecnologias
+## <img src="https://api.iconify.design/tabler/tools.svg?color=%238b949e" width="18" height="18" valign="middle" alt=""/> Tecnologias
 
 - HTML5
 - CSS3
 
-## <img src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons/rocket.svg" width="18" height="18" valign="middle"/> Como usar
+## <img src="https://api.iconify.design/tabler/rocket.svg?color=%238b949e" width="18" height="18" valign="middle" alt=""/> Como usar
 
 ```bash
 git clone https://github.com/marcositz/modelosite.git
@@ -28,6 +28,6 @@ cd modelosite
 
 Ideal como ponto de partida para quem quer montar um portfólio rápido.
 
-## <img src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons/file-text.svg" width="18" height="18" valign="middle"/> Licença
+## <img src="https://api.iconify.design/tabler/file-text.svg?color=%238b949e" width="18" height="18" valign="middle" alt=""/> Licença
 
 © 2025 Marcos Oliveira. Livre para usar como modelo.
